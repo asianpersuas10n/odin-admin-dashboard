@@ -4,8 +4,14 @@
     list-style: none;
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url(./Roboto-Light.ttf);
+}
+
 :root {
     font-size: 16px;
+    font-family: "Roboto", 'Times New Roman', sans-serif;
 }
 
 .page {
@@ -178,6 +184,10 @@ p.title {
     padding-left: 2rem;
 }
 
+.trendingBody div p:first-child {
+    font-weight: bold;
+}
+
 .header {
     grid-area: 1 / 2 / 2 / 3;
     box-shadow: 8px 1px 16px #b4b4b4;
@@ -196,11 +206,16 @@ p.title {
     padding-left: 3rem;
 }
 
+.notif {
+    margin-top: 8px;
+    margin-left: ;
+}
+
 input[type="search"] {
     background-color: #dfdfeb;
     border-radius: 8px;
     border: none;
-    height: 150%;
+    height: 75%;
     width: 75%;
 }
 
@@ -210,10 +225,22 @@ input:focus {
     box-shadow: 0px 1px 10px #b4b4b4;
 }
 
+.profileCorner {
+    font-weight: 700;
+}
+
 .headerR2 {
     display: grid;
     grid-template-columns: 1fr 6fr 4fr;
     align-content: center;
+}
+
+.headerR2 .profilePic {
+    padding-left: 2rem;
+}
+
+.profileText p+p {
+    font-weight: 700;
 }
 
 .headerR2 ul {
